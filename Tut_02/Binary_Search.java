@@ -4,17 +4,10 @@ public class Binary_Search {
 	static int bs(int arr[], int x) {
 		int first = 0;
 		int last = arr.length - 1;
-		int mid = 0;
-		// while
-
-		/**
-		 * array [ 1,3,4,6,7,8,12,41,67];
-		 * 
-		 * value = 3
-		 **/
+		int mid = 0;	
 		while (first < last) {
 
-			mid = (first + last) / 2;
+			mid = first + ( last - first)/2;
 
 			if (arr[mid] == x) {
 				return mid + 1;
